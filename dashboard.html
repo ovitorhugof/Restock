@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restock | Dashboard</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar">
+      <a class="logo" href="dashboard.html"><span>R</span> Restock</a>
+      <nav><a class="ativo" href="dashboard.html">Dashboard</a><a href="produtos.html">Produtos</a><a href="movimentacoes.html">Movimentações</a><a href="historico.html">Histórico</a></nav>
+      <button class="sair" onclick="sair()">Sair</button>
+    </aside>
+    <main class="conteudo">
+      <header><div><h1>Dashboard</h1><p>Visão geral do estoque do restaurante.</p></div><div class="usuario" id="nome-usuario"></div></header>
+      <section class="cards-resumo">
+        <article class="card"><span>Total de produtos</span><strong id="total-produtos">0</strong></article>
+        <article class="card alerta"><span>Estoque baixo</span><strong id="estoque-baixo">0</strong></article>
+        <article class="card"><span>Entradas realizadas</span><strong id="total-entradas">0</strong></article>
+        <article class="card"><span>Saídas realizadas</span><strong id="total-saidas">0</strong></article>
+      </section>
+      <section class="painel"><div class="titulo-painel"><h2>Produtos com estoque baixo</h2><a href="produtos.html">Ver produtos</a></div>
+        <div class="tabela-wrap"><table><thead><tr><th>Produto</th><th>Categoria</th><th>Atual</th><th>Mínimo</th><th>Status</th></tr></thead><tbody id="lista-baixo"></tbody></table></div>
+      </section>
+    </main>
+  </div>
+  <script src="js/storage.js"></script><script src="js/auth.js"></script><script src="js/dashboard.js"></script>
+</body></html>

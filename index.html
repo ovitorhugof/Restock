@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restock | Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+  <main class="login-box">
+    <div class="brand-mark">R</div>
+    <h1>Restock</h1>
+    <p>Controle de estoque para restaurantes</p>
+    <form id="login-form" novalidate>
+      <label for="email">E-mail</label>
+      <input id="email" type="email" placeholder="admin@restock.com" required>
+      <label for="senha">Senha</label>
+      <input id="senha" type="password" placeholder="Digite sua senha" required>
+      <p id="mensagem-login" class="mensagem erro" aria-live="polite"></p>
+      <button type="submit" class="btn btn-principal btn-largo">Entrar</button>
+    </form>
+  </main>
+  <script src="js/storage.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
