@@ -1,4 +1,15 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Restock | Histórico</title><link rel="stylesheet" href="css/style.css"></head>
-<body><div class="app-layout"><aside class="sidebar"><a class="logo" href="dashboard.html"><span>R</span> Restock</a><nav><a href="dashboard.html">Dashboard</a><a href="produtos.html">Produtos</a><a href="movimentacoes.html">Movimentações</a><a class="ativo" href="historico.html">Histórico</a></nav><button class="sair" onclick="sair()">Sair</button></aside>
-<main class="conteudo"><header><div><h1>Histórico</h1><p>Acompanhe todas as movimentações realizadas.</p></div><div class="usuario" id="nome-usuario"></div></header><section class="painel"><div class="filtros"><input id="filtro-produto" class="campo-busca" placeholder="Filtrar por produto"><select id="filtro-tipo"><option value="">Todos os tipos</option><option>Entrada</option><option>Saída</option></select></div><div class="tabela-wrap"><table><thead><tr><th>Data</th><th>Produto</th><th>Tipo</th><th>Quantidade</th><th>Usuário</th><th>Observação</th></tr></thead><tbody id="lista-historico"></tbody></table></div></section></main></div>
-<script src="js/storage.js"></script><script src="js/auth.js"></script><script src="js/historico.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Histórico | Recanto Sabor de Minas</title>
+  <link rel="icon" type="image/png" href="assets/icone-favicon.png"><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar"><a class="brand-lockup" href="dashboard.html"><img class="brand-logo" src="assets/icone-favicon.png" alt="Recanto Sabor de Minas"><span><span class="brand-name">Recanto Sabor de Minas</span><span class="brand-subtitle">Controle de estoque</span></span></a><nav aria-label="Navegação principal"><a href="dashboard.html">Visão geral</a><a href="produtos.html">Produtos</a><a href="movimentacoes.html">Movimentar estoque</a><a class="ativo" href="historico.html">Histórico</a><a href="http://127.0.0.1:3030/terminal" target="_blank" rel="noopener">Terminal de mesas ↗</a></nav><button class="sair" type="button" onclick="sair()">Encerrar acesso</button></aside>
+    <main class="conteudo"><header class="topo-pagina"><div><h1>Histórico</h1><p>Consulte todas as entradas e saídas registradas.</p></div><div class="usuario" id="nome-usuario"></div></header><section class="painel"><div class="filtros"><input id="filtro-produto" class="campo-busca" placeholder="Filtrar por produto" aria-label="Filtrar por produto"><select id="filtro-tipo" aria-label="Filtrar por tipo"><option value="">Todos os tipos</option><option value="Entrada">Entrada</option><option value="Saída">Saída</option></select></div><div class="tabela-wrap"><table><thead><tr><th>Data e hora</th><th>Produto</th><th>Tipo</th><th>Quantidade</th><th>Responsável</th><th>Observação</th></tr></thead><tbody id="lista-historico"></tbody></table></div></section></main>
+  </div>
+  <script src="js/storage.js"></script><script src="js/auth.js"></script><script src="js/historico.js"></script>
+</body>
+</html>

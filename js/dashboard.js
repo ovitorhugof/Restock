@@ -1,8 +1,12 @@
 const produtosDashboard = carregarProdutos();
 const movimentacoesDashboard = carregarMovimentacoes();
-const baixos = produtosDashboard.filter(p => Number(p.quantidade) <= Number(p.estoqueMinimo));
+const baixos = produtosDashboard.filter(produto => Number(produto.quantidade) <= Number(produto.estoqueMinimo));
+
 document.getElementById('total-produtos').textContent = produtosDashboard.length;
 document.getElementById('estoque-baixo').textContent = baixos.length;
-document.getElementById('total-entradas').textContent = movimentacoesDashboard.filter(m => m.tipo === 'Entrada').length;
-document.getElementById('total-saidas').textContent = movimentacoesDashboard.filter(m => m.tipo === 'Saída').length;
-document.getElementById('lista-baixo').innerHTML = baixos.length ? baixos.map(p => `<tr><td>${p.nome}</td><td>${p.categoria}</td><td>${formatarNumero(p.quantidade)} ${p.unidade}</td><td>${formatarNumero(p.estoqueMinimo)} ${p.unidade}</td><td><span class="status status-baixo">Estoque baixo</span></td></tr>`).join('') : '<tr><td colspan="5" class="vazio">Nenhum produto com estoque baixo.</td></tr>';
+document.getElementById('total-entradas').textContent = movimentacoesDashboard.filter(movimentacao => !eSaida(movimentacao.tipo)).length;
+document.getElementById('total-saidas').textContent = movimentacoesDashboard.filter(movimentacao => eSaida(movimentacao.tipo)).length;
+
+document.getElementById('lista-baixo').innerHTML = baixos.length
+  ? baixos.map(produto => `<tr><td>${escaparHtml(produto.nome)}</td><td>${escaparHtml(produto.categoria)}</td><td>${formatarNumero(produto.quantidade)} ${escaparHtml(produto.unidade)}</td><td>${formatarNumero(produto.estoqueMinimo)} ${escaparHtml(produto.unidade)}</td><td><span class="status status-baixo">Atenção</span></td></tr>`).join('')
+  : '<tr><td colspan="5" class="vazio">Nenhum item precisa de reposição.</td></tr>';

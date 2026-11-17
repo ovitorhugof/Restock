@@ -1,28 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restock | Dashboard</title><link rel="stylesheet" href="css/style.css">
+  <title>Painel | Recanto Sabor de Minas</title>
+  <link rel="icon" type="image/png" href="assets/icone-favicon.png"><link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="app-layout">
     <aside class="sidebar">
-      <a class="logo" href="dashboard.html"><span>R</span> Restock</a>
-      <nav><a class="ativo" href="dashboard.html">Dashboard</a><a href="produtos.html">Produtos</a><a href="movimentacoes.html">Movimentações</a><a href="historico.html">Histórico</a></nav>
-      <button class="sair" onclick="sair()">Sair</button>
+      <a class="brand-lockup" href="dashboard.html"><img class="brand-logo" src="assets/icone-favicon.png" alt="Recanto Sabor de Minas"><span><span class="brand-name">Recanto Sabor de Minas</span><span class="brand-subtitle">Controle de estoque</span></span></a>
+      <nav aria-label="Navegação principal"><a class="ativo" href="dashboard.html">Visão geral</a><a href="produtos.html">Produtos</a><a href="movimentacoes.html">Movimentar estoque</a><a href="historico.html">Histórico</a><a href="http://127.0.0.1:3030/terminal" target="_blank" rel="noopener">Terminal de mesas ↗</a></nav>
+      <button class="sair" type="button" onclick="sair()">Encerrar acesso</button>
     </aside>
     <main class="conteudo">
-      <header><div><h1>Dashboard</h1><p>Visão geral do estoque do restaurante.</p></div><div class="usuario" id="nome-usuario"></div></header>
-      <section class="cards-resumo">
-        <article class="card"><span>Total de produtos</span><strong id="total-produtos">0</strong></article>
-        <article class="card alerta"><span>Estoque baixo</span><strong id="estoque-baixo">0</strong></article>
-        <article class="card"><span>Entradas realizadas</span><strong id="total-entradas">0</strong></article>
-        <article class="card"><span>Saídas realizadas</span><strong id="total-saidas">0</strong></article>
+      <header class="topo-pagina"><div><h1>Visão geral</h1><p>Acompanhamento rápido do estoque.</p></div><div class="usuario" id="nome-usuario"></div></header>
+      <section class="cards-resumo" aria-label="Resumo do estoque">
+        <article class="card"><span>Produtos cadastrados</span><strong id="total-produtos">0</strong></article>
+        <article class="card alerta"><span>Precisam de reposição</span><strong id="estoque-baixo">0</strong></article>
+        <article class="card"><span>Entradas registradas</span><strong id="total-entradas">0</strong></article>
+        <article class="card"><span>Saídas registradas</span><strong id="total-saidas">0</strong></article>
       </section>
-      <section class="painel"><div class="titulo-painel"><h2>Produtos com estoque baixo</h2><a href="produtos.html">Ver produtos</a></div>
-        <div class="tabela-wrap"><table><thead><tr><th>Produto</th><th>Categoria</th><th>Atual</th><th>Mínimo</th><th>Status</th></tr></thead><tbody id="lista-baixo"></tbody></table></div>
-      </section>
+      <section class="painel"><div class="titulo-painel"><h2>Itens para acompanhar</h2><a href="produtos.html">Ver produtos</a></div><div class="tabela-wrap"><table><thead><tr><th>Produto</th><th>Categoria</th><th>Estoque atual</th><th>Mínimo</th><th>Situação</th></tr></thead><tbody id="lista-baixo"></tbody></table></div></section>
     </main>
   </div>
   <script src="js/storage.js"></script><script src="js/auth.js"></script><script src="js/dashboard.js"></script>
-</body></html>
+</body>
+</html>

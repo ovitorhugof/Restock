@@ -1,23 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restock | Login</title>
+  <title>Recanto Sabor de Minas | Estoque</title>
+  <link rel="icon" type="image/png" href="assets/icone-favicon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="login-page">
   <main class="login-box">
-    <div class="brand-mark">R</div>
-    <h1>Restock</h1>
-    <p>Controle de estoque para restaurantes</p>
+    <div class="brand-lockup"><img class="brand-logo" src="assets/logo-recanto-completo.png" alt="Recanto Sabor de Minas"></div>
+    <h1>Controle de estoque</h1>
+    <p>Informe seus dados para acessar o controle de estoque.</p>
     <form id="login-form" novalidate>
-      <label for="email">E-mail</label>
-      <input id="email" type="email" placeholder="admin@restock.com" required>
-      <label for="senha">Senha</label>
-      <input id="senha" type="password" placeholder="Digite sua senha" required>
+      <label for="nome">Seu nome <span class="required">*</span></label>
+      <input id="nome" autocomplete="name" maxlength="60" placeholder="Ex.: Maria" required autofocus>
+      <label for="senha">Senha <span class="required">*</span></label>
+      <input id="senha" type="password" autocomplete="current-password" required>
       <p id="mensagem-login" class="mensagem erro" aria-live="polite"></p>
-      <button type="submit" class="btn btn-principal btn-largo">Entrar</button>
+      <button type="submit" class="btn btn-principal btn-largo">Acessar estoque</button>
     </form>
   </main>
   <script src="js/storage.js"></script>

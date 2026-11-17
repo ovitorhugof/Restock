@@ -1,0 +1,149 @@
+[
+  {
+    "numero": 1,
+    "capacidade": 4,
+    "ocupada": true,
+    "pessoas": 4,
+    "horarioOcupacao": "2026-11-17T13:54:37.626Z"
+  },
+  {
+    "numero": 2,
+    "capacidade": 4,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  },
+  {
+    "numero": 3,
+    "capacidade": 2,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  },
+  {
+    "numero": 4,
+    "capacidade": 4,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  },
+  {
+    "numero": 5,
+    "capacidade": 6,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  },
+  {
+    "numero": 6,
+    "capacidade": 4,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  },
+  {
+    "numero": 7,
+    "capacidade": 4,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  },
+  {
+    "numero": 8,
+    "capacidade": 2,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  },
+  {
+    "numero": 9,
+    "capacidade": 4,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  },
+  {
+    "numero": 10,
+    "capacidade": 6,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  },
+  {
+    "numero": 11,
+    "capacidade": 4,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  },
+  {
+    "numero": 12,
+    "capacidade": 4,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  },
+  {
+    "numero": 13,
+    "capacidade": 2,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  },
+  {
+    "numero": 14,
+    "capacidade": 4,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  },
+  {
+    "numero": 15,
+    "capacidade": 6,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  },
+  {
+    "numero": 16,
+    "capacidade": 4,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  },
+  {
+    "numero": 17,
+    "capacidade": 4,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  },
+  {
+    "numero": 18,
+    "capacidade": 2,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  },
+  {
+    "numero": 19,
+    "capacidade": 4,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  },
+  {
+    "numero": 20,
+    "capacidade": 6,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  },
+  {
+    "numero": 21,
+    "capacidade": 4,
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
+  }
+]
