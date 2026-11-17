@@ -2,9 +2,9 @@
   {
     "numero": 1,
     "capacidade": 4,
-    "ocupada": true,
-    "pessoas": 4,
-    "horarioOcupacao": "2026-11-17T13:54:37.626Z"
+    "ocupada": false,
+    "pessoas": 0,
+    "horarioOcupacao": null
   },
   {
     "numero": 2,
